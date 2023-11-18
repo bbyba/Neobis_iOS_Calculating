@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDF2611A2B08FC5F00C006CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF261192B08FC5F00C006CE /* AppDelegate.swift */; };
+		DDF2611C2B08FC5F00C006CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF2611B2B08FC5F00C006CE /* SceneDelegate.swift */; };
+		DDF2611E2B08FC5F00C006CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF2611D2B08FC5F00C006CE /* ViewController.swift */; };
+		DDF261212B08FC5F00C006CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF2611F2B08FC5F00C006CE /* Main.storyboard */; };
+		DDF261232B08FC6200C006CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF261222B08FC6200C006CE /* Assets.xcassets */; };
+		DDF261262B08FC6200C006CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF261242B08FC6200C006CE /* LaunchScreen.storyboard */; };
+		DDF261312B08FC6200C006CE /* Neobis_iOS_CalculatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF261302B08FC6200C006CE /* Neobis_iOS_CalculatingTests.swift */; };
+		DDF2613B2B08FC6200C006CE /* Neobis_iOS_CalculatingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF2613A2B08FC6200C006CE /* Neobis_iOS_CalculatingUITests.swift */; };
+		DDF2613D2B08FC6200C006CE /* Neobis_iOS_CalculatingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF2613C2B08FC6200C006CE /* Neobis_iOS_CalculatingUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDF2612D2B08FC6200C006CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDF2610E2B08FC5F00C006CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDF261152B08FC5F00C006CE;
+			remoteInfo = Neobis_iOS_Calculating;
+		};
+		DDF261372B08FC6200C006CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDF2610E2B08FC5F00C006CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDF261152B08FC5F00C006CE;
+			remoteInfo = Neobis_iOS_Calculating;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDF261162B08FC5F00C006CE /* Neobis_iOS_Calculating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neobis_iOS_Calculating.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF261192B08FC5F00C006CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDF2611B2B08FC5F00C006CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DDF2611D2B08FC5F00C006CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDF261202B08FC5F00C006CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDF261222B08FC6200C006CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDF261252B08FC6200C006CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDF261272B08FC6200C006CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDF2612C2B08FC6200C006CE /* Neobis_iOS_CalculatingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Neobis_iOS_CalculatingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF261302B08FC6200C006CE /* Neobis_iOS_CalculatingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neobis_iOS_CalculatingTests.swift; sourceTree = "<group>"; };
+		DDF261362B08FC6200C006CE /* Neobis_iOS_CalculatingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Neobis_iOS_CalculatingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF2613A2B08FC6200C006CE /* Neobis_iOS_CalculatingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neobis_iOS_CalculatingUITests.swift; sourceTree = "<group>"; };
+		DDF2613C2B08FC6200C006CE /* Neobis_iOS_CalculatingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neobis_iOS_CalculatingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDF261132B08FC5F00C006CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF261292B08FC6200C006CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF261332B08FC6200C006CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDF2610D2B08FC5F00C006CE = {
+			isa = PBXGroup;
+			children = (
+				DDF261182B08FC5F00C006CE /* Neobis_iOS_Calculating */,
+				DDF2612F2B08FC6200C006CE /* Neobis_iOS_CalculatingTests */,
+				DDF261392B08FC6200C006CE /* Neobis_iOS_CalculatingUITests */,
+				DDF261172B08FC5F00C006CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDF261172B08FC5F00C006CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDF261162B08FC5F00C006CE /* Neobis_iOS_Calculating.app */,
+				DDF2612C2B08FC6200C006CE /* Neobis_iOS_CalculatingTests.xctest */,
+				DDF261362B08FC6200C006CE /* Neobis_iOS_CalculatingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDF261182B08FC5F00C006CE /* Neobis_iOS_Calculating */ = {
+			isa = PBXGroup;
+			children = (
+				DDF261192B08FC5F00C006CE /* AppDelegate.swift */,
+				DDF2611B2B08FC5F00C006CE /* SceneDelegate.swift */,
+				DDF2611D2B08FC5F00C006CE /* ViewController.swift */,
+				DDF2611F2B08FC5F00C006CE /* Main.storyboard */,
+				DDF261222B08FC6200C006CE /* Assets.xcassets */,
+				DDF261242B08FC6200C006CE /* LaunchScreen.storyboard */,
+				DDF261272B08FC6200C006CE /* Info.plist */,
+			);
+			path = Neobis_iOS_Calculating;
+			sourceTree = "<group>";
+		};
+		DDF2612F2B08FC6200C006CE /* Neobis_iOS_CalculatingTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDF261302B08FC6200C006CE /* Neobis_iOS_CalculatingTests.swift */,
+			);
+			path = Neobis_iOS_CalculatingTests;
+			sourceTree = "<group>";
+		};
+		DDF261392B08FC6200C006CE /* Neobis_iOS_CalculatingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDF2613A2B08FC6200C006CE /* Neobis_iOS_CalculatingUITests.swift */,
+				DDF2613C2B08FC6200C006CE /* Neobis_iOS_CalculatingUITestsLaunchTests.swift */,
+			);
+			path = Neobis_iOS_CalculatingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDF261152B08FC5F00C006CE /* Neobis_iOS_Calculating */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF261402B08FC6200C006CE /* Build configuration list for PBXNativeTarget "Neobis_iOS_Calculating" */;
+			buildPhases = (
+				DDF261122B08FC5F00C006CE /* Sources */,
+				DDF261132B08FC5F00C006CE /* Frameworks */,
+				DDF261142B08FC5F00C006CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Neobis_iOS_Calculating;
+			productName = Neobis_iOS_Calculating;
+			productReference = DDF261162B08FC5F00C006CE /* Neobis_iOS_Calculating.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDF2612B2B08FC6200C006CE /* Neobis_iOS_CalculatingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF261432B08FC6200C006CE /* Build configuration list for PBXNativeTarget "Neobis_iOS_CalculatingTests" */;
+			buildPhases = (
+				DDF261282B08FC6200C006CE /* Sources */,
+				DDF261292B08FC6200C006CE /* Frameworks */,
+				DDF2612A2B08FC6200C006CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDF2612E2B08FC6200C006CE /* PBXTargetDependency */,
+			);
+			name = Neobis_iOS_CalculatingTests;
+			productName = Neobis_iOS_CalculatingTests;
+			productReference = DDF2612C2B08FC6200C006CE /* Neobis_iOS_CalculatingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDF261352B08FC6200C006CE /* Neobis_iOS_CalculatingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF261462B08FC6200C006CE /* Build configuration list for PBXNativeTarget "Neobis_iOS_CalculatingUITests" */;
+			buildPhases = (
+				DDF261322B08FC6200C006CE /* Sources */,
+				DDF261332B08FC6200C006CE /* Frameworks */,
+				DDF261342B08FC6200C006CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDF261382B08FC6200C006CE /* PBXTargetDependency */,
+			);
+			name = Neobis_iOS_CalculatingUITests;
+			productName = Neobis_iOS_CalculatingUITests;
+			productReference = DDF261362B08FC6200C006CE /* Neobis_iOS_CalculatingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDF2610E2B08FC5F00C006CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DDF261152B08FC5F00C006CE = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					DDF2612B2B08FC6200C006CE = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = DDF261152B08FC5F00C006CE;
+					};
+					DDF261352B08FC6200C006CE = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = DDF261152B08FC5F00C006CE;
+					};
+				};
+			};
+			buildConfigurationList = DDF261112B08FC5F00C006CE /* Build configuration list for PBXProject "Neobis_iOS_Calculating" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDF2610D2B08FC5F00C006CE;
+			productRefGroup = DDF261172B08FC5F00C006CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDF261152B08FC5F00C006CE /* Neobis_iOS_Calculating */,
+				DDF2612B2B08FC6200C006CE /* Neobis_iOS_CalculatingTests */,
+				DDF261352B08FC6200C006CE /* Neobis_iOS_CalculatingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDF261142B08FC5F00C006CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF261262B08FC6200C006CE /* LaunchScreen.storyboard in Resources */,
+				DDF261232B08FC6200C006CE /* Assets.xcassets in Resources */,
+				DDF261212B08FC5F00C006CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF2612A2B08FC6200C006CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF261342B08FC6200C006CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDF261122B08FC5F00C006CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF2611E2B08FC5F00C006CE /* ViewController.swift in Sources */,
+				DDF2611A2B08FC5F00C006CE /* AppDelegate.swift in Sources */,
+				DDF2611C2B08FC5F00C006CE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF261282B08FC6200C006CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF261312B08FC6200C006CE /* Neobis_iOS_CalculatingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF261322B08FC6200C006CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF2613D2B08FC6200C006CE /* Neobis_iOS_CalculatingUITestsLaunchTests.swift in Sources */,
+				DDF2613B2B08FC6200C006CE /* Neobis_iOS_CalculatingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDF2612E2B08FC6200C006CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDF261152B08FC5F00C006CE /* Neobis_iOS_Calculating */;
+			targetProxy = DDF2612D2B08FC6200C006CE /* PBXContainerItemProxy */;
+		};
+		DDF261382B08FC6200C006CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDF261152B08FC5F00C006CE /* Neobis_iOS_Calculating */;
+			targetProxy = DDF261372B08FC6200C006CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDF2611F2B08FC5F00C006CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDF261202B08FC5F00C006CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDF261242B08FC6200C006CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDF261252B08FC6200C006CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDF2613E2B08FC6200C006CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDF2613F2B08FC6200C006CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDF261412B08FC6200C006CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H7BR8NTQAT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Neobis_iOS_Calculating/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "burte.Neobis-iOS-Calculating";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDF261422B08FC6200C006CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H7BR8NTQAT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Neobis_iOS_Calculating/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "burte.Neobis-iOS-Calculating";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDF261442B08FC6200C006CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H7BR8NTQAT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "burte.Neobis-iOS-CalculatingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Neobis_iOS_Calculating.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Neobis_iOS_Calculating";
+			};
+			name = Debug;
+		};
+		DDF261452B08FC6200C006CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H7BR8NTQAT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "burte.Neobis-iOS-CalculatingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Neobis_iOS_Calculating.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Neobis_iOS_Calculating";
+			};
+			name = Release;
+		};
+		DDF261472B08FC6200C006CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H7BR8NTQAT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "burte.Neobis-iOS-CalculatingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Neobis_iOS_Calculating;
+			};
+			name = Debug;
+		};
+		DDF261482B08FC6200C006CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H7BR8NTQAT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "burte.Neobis-iOS-CalculatingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Neobis_iOS_Calculating;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDF261112B08FC5F00C006CE /* Build configuration list for PBXProject "Neobis_iOS_Calculating" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF2613E2B08FC6200C006CE /* Debug */,
+				DDF2613F2B08FC6200C006CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF261402B08FC6200C006CE /* Build configuration list for PBXNativeTarget "Neobis_iOS_Calculating" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF261412B08FC6200C006CE /* Debug */,
+				DDF261422B08FC6200C006CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF261432B08FC6200C006CE /* Build configuration list for PBXNativeTarget "Neobis_iOS_CalculatingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF261442B08FC6200C006CE /* Debug */,
+				DDF261452B08FC6200C006CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF261462B08FC6200C006CE /* Build configuration list for PBXNativeTarget "Neobis_iOS_CalculatingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF261472B08FC6200C006CE /* Debug */,
+				DDF261482B08FC6200C006CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDF2610E2B08FC5F00C006CE /* Project object */;
+}
