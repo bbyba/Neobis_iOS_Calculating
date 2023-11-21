@@ -10,12 +10,13 @@
 		DDF2611A2B08FC5F00C006CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF261192B08FC5F00C006CE /* AppDelegate.swift */; };
 		DDF2611C2B08FC5F00C006CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF2611B2B08FC5F00C006CE /* SceneDelegate.swift */; };
 		DDF2611E2B08FC5F00C006CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF2611D2B08FC5F00C006CE /* ViewController.swift */; };
-		DDF261212B08FC5F00C006CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF2611F2B08FC5F00C006CE /* Main.storyboard */; };
 		DDF261232B08FC6200C006CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF261222B08FC6200C006CE /* Assets.xcassets */; };
 		DDF261262B08FC6200C006CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF261242B08FC6200C006CE /* LaunchScreen.storyboard */; };
 		DDF261312B08FC6200C006CE /* Neobis_iOS_CalculatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF261302B08FC6200C006CE /* Neobis_iOS_CalculatingTests.swift */; };
 		DDF2613B2B08FC6200C006CE /* Neobis_iOS_CalculatingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF2613A2B08FC6200C006CE /* Neobis_iOS_CalculatingUITests.swift */; };
 		DDF2613D2B08FC6200C006CE /* Neobis_iOS_CalculatingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF2613C2B08FC6200C006CE /* Neobis_iOS_CalculatingUITestsLaunchTests.swift */; };
+		DDF261582B0B7EE700C006CE /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF261572B0B7EE600C006CE /* CalculatorModel.swift */; };
+		DDF2615C2B0BEC0000C006CE /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF2615B2B0BEC0000C006CE /* CalculatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 		DDF261192B08FC5F00C006CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDF2611B2B08FC5F00C006CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DDF2611D2B08FC5F00C006CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DDF261202B08FC5F00C006CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDF261222B08FC6200C006CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDF261252B08FC6200C006CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDF261272B08FC6200C006CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		DDF261362B08FC6200C006CE /* Neobis_iOS_CalculatingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Neobis_iOS_CalculatingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF2613A2B08FC6200C006CE /* Neobis_iOS_CalculatingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neobis_iOS_CalculatingUITests.swift; sourceTree = "<group>"; };
 		DDF2613C2B08FC6200C006CE /* Neobis_iOS_CalculatingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neobis_iOS_CalculatingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DDF261572B0B7EE600C006CE /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
+		DDF2615B2B0BEC0000C006CE /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,8 @@
 				DDF261192B08FC5F00C006CE /* AppDelegate.swift */,
 				DDF2611B2B08FC5F00C006CE /* SceneDelegate.swift */,
 				DDF2611D2B08FC5F00C006CE /* ViewController.swift */,
-				DDF2611F2B08FC5F00C006CE /* Main.storyboard */,
+				DDF2615B2B0BEC0000C006CE /* CalculatorView.swift */,
+				DDF261572B0B7EE600C006CE /* CalculatorModel.swift */,
 				DDF261222B08FC6200C006CE /* Assets.xcassets */,
 				DDF261242B08FC6200C006CE /* LaunchScreen.storyboard */,
 				DDF261272B08FC6200C006CE /* Info.plist */,
@@ -233,7 +236,6 @@
 			files = (
 				DDF261262B08FC6200C006CE /* LaunchScreen.storyboard in Resources */,
 				DDF261232B08FC6200C006CE /* Assets.xcassets in Resources */,
-				DDF261212B08FC5F00C006CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF2615C2B0BEC0000C006CE /* CalculatorView.swift in Sources */,
 				DDF2611E2B08FC5F00C006CE /* ViewController.swift in Sources */,
+				DDF261582B0B7EE700C006CE /* CalculatorModel.swift in Sources */,
 				DDF2611A2B08FC5F00C006CE /* AppDelegate.swift in Sources */,
 				DDF2611C2B08FC5F00C006CE /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DDF2611F2B08FC5F00C006CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DDF261202B08FC5F00C006CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DDF261242B08FC6200C006CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,7 +443,6 @@
 				INFOPLIST_FILE = Neobis_iOS_Calculating/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,7 +470,6 @@
 				INFOPLIST_FILE = Neobis_iOS_Calculating/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

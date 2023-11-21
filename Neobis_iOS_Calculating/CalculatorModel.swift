@@ -4,24 +4,36 @@
 //
 
 import Foundation
-import UIKit
 
-struct CalculatorModel {
-    var num1: Float
-    var num2: Float
-    var currentOperation: Operations
+enum Operations: String {
+    case addition = "+"
+    case subtraction = "-"
+    case multiplication = "x"
+    case division = "÷"
+//    case equals = "="
+}
+
+class CalculatorModel {
+    var firstNumber: Double = 0
+    var secondNumber: Double = 0
+    var currentOperation: Operations?
     
-    func performOperation() -> Float {
-        switch currentOperation {
+    init(currentOperation: Operations?) {
+        self.currentOperation = currentOperation
+    }
+    
+    var performOperation: Double {
+        guard let operation = currentOperation else { return 0 }
+        
+        switch operation {
         case .addition:
-            return num1 + num2
+            return firstNumber + secondNumber
         case .subtraction:
-            return num1 - num2
+            return firstNumber - secondNumber
         case .multiplication:
-            return num1 * num2
+            return firstNumber * secondNumber
         case .division:
-            return num1 / num2
+            return firstNumber / secondNumber
         }
     }
-
 }
