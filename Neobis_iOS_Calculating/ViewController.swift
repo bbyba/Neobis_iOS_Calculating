@@ -10,7 +10,7 @@ class ViewController: UIViewController {
     let calculatorView = CalculatorView()
     var calculator = CalculatorModel(currentOperation: .addition)
     var userIsTypingTheNumber: Bool = false
-    var decimalUsed: Bool = false
+    var decimalWasUsed: Bool = false
     var equalsButtonPressed: Bool = false
 
     override func viewDidLoad() {
@@ -58,13 +58,13 @@ class ViewController: UIViewController {
     }
 
     @objc func didTapNumbers(_ sender: UIButton){
-        if let numberButtonText = sender.title(for: .normal) {
-            if calculatorView.display.text == "0" || equalsButtonPressed == true {
-                calculatorView.display.text = numberButtonText
-                equalsButtonPressed = false
-            } else {
-                calculatorView.display.text! += numberButtonText
-            }
+        guard let numberButtonText = sender.title(for: .normal) else { return }
+
+        if calculatorView.display.text == "0" || equalsButtonPressed  == true {
+            equalsButtonPressed = false
+            calculatorView.display.text = numberButtonText
+        } else {
+            calculatorView.display.text! += numberButtonText
         }
     }
 
@@ -92,14 +92,9 @@ class ViewController: UIViewController {
         }
     }
 
-    @objc func didTapDecimals(_ sender: UIButton){
-        if var text = calculatorView.display.text {
-            if calculatorView.display.text == "0" {
-                calculatorView.display.text = "0."
-            } else {
+    @objc func didTapDecimals(_ sender: UIButton) {
+        guard !calculatorView.display.text!.contains(".") else { return }
                 calculatorView.display.text! += "."
-            }
-        }
     }
     
     @objc func didTapOperations(_ sender: UIButton) {
@@ -111,6 +106,7 @@ class ViewController: UIViewController {
                 
                 if calculator.currentOperation != nil {
                     calculator.secondNumber = currentNumber
+//                    print("second num: \(calculatorView.display.text ?? "nil")")
                     let result = calculator.performOperation
                     
                     if result == floor(result) {
@@ -118,13 +114,17 @@ class ViewController: UIViewController {
                     } else {
                         calculatorView.display.text = String(result)
                     }
+                    print("result: \(result)")
                     
                     calculator.firstNumber = result
+                    print("first num: \(calculatorView.display.text ?? "nil")")
                 } else {
                     calculator.firstNumber = currentNumber
+                    print("first num: \(calculatorView.display.text ?? "nil")")
                 }
             }
             calculator.currentOperation = operation
+//            print("current operation: \(calculator.currentOperation)")
             calculatorView.display.text = ""
         }
     }
