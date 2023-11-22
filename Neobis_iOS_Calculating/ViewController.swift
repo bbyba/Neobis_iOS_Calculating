@@ -74,12 +74,8 @@ class ViewController: UIViewController {
 
     @objc func didTapSignChange(_ sender: UIButton){
         if var text = calculatorView.display.text, var number = Double(text) {
-            if number == floor(number) {
-                text = String(format: "%d", Int(number) * -1)
-            } else {
-                number *= -1
-                text = String(number)
-            }
+            number *= -1
+            text = formatResult(number)
             calculatorView.display.text = text
         }
     }
@@ -87,7 +83,7 @@ class ViewController: UIViewController {
     @objc func didTapPercentage(_ sender: UIButton){
         if var text = calculatorView.display.text, let number = Double(text) {
             let changedNumber = number / 100
-            text = String(changedNumber)
+            text = formatResult(changedNumber)
             calculatorView.display.text = text
         }
     }
@@ -105,26 +101,17 @@ class ViewController: UIViewController {
                let currentNumber = Double(currentDisplayText) {
                 
                 if calculator.currentOperation != nil {
+                    
                     calculator.secondNumber = currentNumber
-//                    print("second num: \(calculatorView.display.text ?? "nil")")
                     let result = calculator.performOperation
-                    
-                    if result == floor(result) {
-                        calculatorView.display.text = String(format: "%.0f", result)
-                    } else {
-                        calculatorView.display.text = String(result)
-                    }
-                    print("result: \(result)")
-                    
+                    calculatorView.display.text = formatResult(result)
                     calculator.firstNumber = result
-                    print("first num: \(calculatorView.display.text ?? "nil")")
+                    
                 } else {
                     calculator.firstNumber = currentNumber
-                    print("first num: \(calculatorView.display.text ?? "nil")")
                 }
             }
             calculator.currentOperation = operation
-//            print("current operation: \(calculator.currentOperation)")
             calculatorView.display.text = ""
         }
     }
@@ -136,11 +123,7 @@ class ViewController: UIViewController {
             calculator.secondNumber = currentNumber
             let result = calculator.performOperation
             
-            if result == floor(result) {
-                calculatorView.display.text = String(format: "%.0f", result)
-            } else {
-                calculatorView.display.text = String(result)
-            }
+            calculatorView.display.text = formatResult(result)
 
             calculator.currentOperation = nil
             calculator.firstNumber = 0
@@ -148,5 +131,13 @@ class ViewController: UIViewController {
             equalsButtonPressed = true
         }
     }
+
+    func formatResult(_ number: Double) -> String {
+        let formatter = NumberFormatter()
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 10
+        return formatter.string(from: NSNumber(value: number)) ?? ""
+    }
+
 }
 
