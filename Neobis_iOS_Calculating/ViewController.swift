@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         view.addSubview(calculatorView)
         buttonsConstraints()
         addTargets()
+        gestureRecognizer()
     }
 
     func buttonsConstraints() {
@@ -31,6 +32,14 @@ class ViewController: UIViewController {
             calculatorView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         
         ])
+    }
+    
+    func gestureRecognizer(){
+        let gestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(gestureDone(_ :)) )
+        gestureRecognizer.direction = [.left, .right]
+        gestureRecognizer.numberOfTouchesRequired = 1
+        calculatorView.display.addGestureRecognizer(gestureRecognizer)
+        calculatorView.display.isUserInteractionEnabled = true
     }
     
     func addTargets(){
@@ -130,6 +139,20 @@ class ViewController: UIViewController {
             calculator.secondNumber = 0
             equalsButtonPressed = true
         }
+    }
+    
+    @objc func gestureDone(_ gesture: UISwipeGestureRecognizer) {
+        print("swipe gesture done")
+        guard let text = calculatorView.display.text, !text.isEmpty else {
+            return
+        }
+
+        var newText = text
+
+        if gesture.direction == [.left, .right] {
+            newText.removeLast()
+        }
+        calculatorView.display.text = newText
     }
 
     func formatResult(_ number: Double) -> String {

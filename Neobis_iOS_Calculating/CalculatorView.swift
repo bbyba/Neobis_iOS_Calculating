@@ -15,6 +15,7 @@ class CalculatorView: UIView {
         label.textColor = .white
         label.textAlignment = .right
         label.adjustsFontSizeToFitWidth = true
+        label.isUserInteractionEnabled = true
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
@@ -27,7 +28,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("C", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(CalculatorView.self, action: #selector(didTapAllClear(_ :)), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -39,7 +39,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("+/-", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(self, action: #selector, for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -50,7 +49,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("%", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(self, action: #selector, for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -61,7 +59,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("÷", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(self, action: #selector, for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -75,7 +72,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("7", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(CalculatorView.self, action: #selector(didTapNumbers(_ :)), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -87,7 +83,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("8", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(CalculatorView.self, action: #selector(didTapNumbers(_ :)), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -99,7 +94,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("9", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(CalculatorView.self, action: #selector(didTapNumbers(_ :)), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -111,7 +105,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("x", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(self, action: #selector, for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -124,7 +117,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("4", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(CalculatorView.self, action: #selector(didTapNumbers(_ :)), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -136,7 +128,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("5", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(CalculatorView.self, action: #selector(didTapNumbers(_ :)), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -148,7 +139,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("6", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(CalculatorView.self, action: #selector(didTapNumbers(_ :)), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -160,7 +150,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("-", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(self, action: #selector, for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -174,7 +163,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("1", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(CalculatorView.self, action: #selector(didTapNumbers(_ :)), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -186,7 +174,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("2", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(CalculatorView.self, action: #selector(didTapNumbers(_ :)), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -198,7 +185,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("3", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(CalculatorView.self, action: #selector(didTapNumbers(_ :)), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -210,7 +196,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("+", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(self, action: #selector, for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -224,7 +209,6 @@ class CalculatorView: UIView {
         button.layer.cornerRadius = 40
         button.setTitle("0", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-//        button.addTarget(CalculatorView.self, action: #selector(didTapNumbers(_ :)), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button

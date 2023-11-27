@@ -10,7 +10,6 @@ enum Operations: String {
     case subtraction = "-"
     case multiplication = "x"
     case division = "÷"
-//    case equals = "="
 }
 
 class CalculatorModel {
